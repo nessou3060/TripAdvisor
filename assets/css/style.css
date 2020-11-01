@@ -1,0 +1,286 @@
+body {
+  font-family: "Trip Sans Med";
+  font-size: 16px;
+  margin: 0 5%;
+}
+.container {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /* margin: 10px 50px 20px 0; */
+}
+
+header img {
+  width: 188px;
+}
+
+header nav i {
+  margin: 0px 15px;
+}
+
+header nav span {
+  font-size: 16px;
+  margin: 0px 10px;
+  font-family: "Trip Sans Med";
+}
+
+header button {
+  height: 40px; /*hauteur*/
+  width: 150px; /*largeur*/
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none; /*contour*/
+  border-radius: 20px;
+}
+main h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+main h1 span {
+  color: #ff5d5d;
+}
+
+.title {
+  margin: 30px 0px;
+}
+
+.navigation-menu {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.navigation-menu div {
+  flex: 1;
+  margin: 0px 10px;
+  padding: 15px;
+  display: flex;
+  border: 1px solid;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+main nav span {
+  font-size: 16px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.all-images {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.image1 img {
+  width: 800px;
+  height: 430px;
+}
+.image2 img {
+  background-color: sienna;
+  width: 480px;
+  height: 214px;
+  object-fit: fill;
+  margin: 0px 5px;
+}
+main nav {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+main nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Trip Sans Reg";
+  font-size: 12px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.col {
+  display: flex;
+  margin: 35px 15px;
+  justify-content: space-between;
+}
+.col1 {
+  width: 50%;
+}
+
+.col1 h3 {
+  margin: 15px 15px;
+  height: 50%;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: gray;
+}
+.col2 {
+  width: 30%;
+}
+
+.col2 h3 {
+  width: 420px;
+  height: 28;
+  font-size: 29px;
+  margin: 0px 0px 5px;
+  background-color: plum;
+}
+
+.col2 p {
+  margin: 15px 15px 20px;
+}
+
+.col2 button {
+  height: 40px; /*hauteur*/
+  width: 150px; /*largeur*/
+  background-color: black;
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none; /*contour*/
+  border-radius: 20px;
+}
+.col2 img {
+  height: 190px;
+  background-image: url(../img/map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.section1 {
+  margin: 30px 0 100px 0;
+  justify-content: space-around;
+}
+.section1 .title {
+  display: flex;
+  justify-content: center;
+}
+
+.section1 p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons {
+  flex: 1;
+  display: flex;
+  margin: 0px 10px;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.section1 img {
+  display: flex;
+
+  width: 88px;
+  height: 80px;
+  background-color: gray;
+}
+.section1 span {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem 0;
+}
+.carousel {
+  margin-left: 1rem;
+}
+@media (max-width: 1328px) {
+  .navigation-menu > div:nth-child(7) {
+    display: flex;
+  }
+  .navigation-menu > div:not(:last-child) {
+    margin-right: 0px;
+  }
+  .navigation-menu {
+    flex-wrap: wrap;
+  }
+  .navigation-menu > div {
+    min-width: calc(100% / 4 - (60px / 4));
+  }
+  .navigation-menu > div:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
+  .navigation-menu > div:nth-child(1),
+  .navigation-menu > div:nth-child(2),
+  .navigation-menu > div:nth-child(3),
+  .navigation-menu > div:nth-child(4) {
+    margin-bottom: 20px;
+  }
+
+  .all-images {
+    height: 370px;
+  }
+  .all-images .col2 {
+    width: 400px;
+  }
+  /* col */
+  .col .col2 > div:first-child {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* HEADER */
+  header span {
+    display: none;
+  }
+  /* col */
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .col .col1 {
+    width: 100%;
+  }
+  .col .col2 {
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    margin-top: 40px;
+  }
+  .col .col2 > div:first-child {
+    width: 50%;
+  }
+  .col .col2 > div:last-child {
+    height: 300px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hidden {
+    display: flex !important;
+  }
+  header nav {
+    display: none;
+  }
+  header img {
+    width: 132px;
+  }
+}

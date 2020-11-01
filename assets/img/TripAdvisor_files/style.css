@@ -1,0 +1,322 @@
+/* COMMON RULES */
+
+body {
+  font-family: "Trip Sans Med", Arial;
+  font-size: 16px;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  /* border: black solid 2px; */
+  box-sizing: border-box;
+}
+
+/* Titles */
+h1 {
+  font-size: 54px;
+  letter-spacing: 1.1px;
+  line-height: 64px;
+  font-family: "Trip Sans VF", "Trip Sans Med", Arial;
+}
+h1 span {
+  color: red;
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 28px;
+}
+
+/* HEADER */
+header {
+  /* background-color: lightcoral; */
+  height: 60px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header img {
+  width: 188px;
+}
+
+header nav {
+  /* width: 400px;
+  height: 40px; */
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav div {
+  margin-right: 20px;
+}
+
+header nav div i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+header button {
+  height: 40px;
+  width: 200px;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: inherit;
+}
+
+/* MAIN */
+
+/* Title */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title h2 {
+  margin: 0 20px;
+}
+.title div {
+  border-top: black solid 2px;
+  flex: 1;
+}
+
+/* Navigation Menu */
+.navigation-menu {
+  /* border: green 4px solid; */
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.navigation-menu > div {
+  border: red 4px solid;
+  flex: 1;
+  padding: 15px;
+  display: flex;
+}
+
+.navigation-menu > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Pictures */
+.pictures {
+  height: 430px;
+  /* background-color: red; */
+  display: flex;
+}
+
+.pictures .col-1 {
+  height: 100%;
+  /* background-color: blue; */
+  flex: 1;
+  margin-right: 2px;
+}
+
+.pictures .col-2 {
+  height: 100%;
+  /* background-color: purple; */
+  width: 480px;
+}
+
+.pictures .col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pictures .col-2 img {
+  height: calc(50% - 1.5px);
+  width: 100%;
+  object-fit: cover;
+  /* display: inline-block; */
+}
+
+.pictures .col-2 img:first-child {
+  border-top-right-radius: 20px;
+}
+
+.pictures .col-2 img:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* Description */
+.description {
+  margin: 50px 0;
+  display: flex;
+}
+
+.description .col-1,
+.description .col-2 {
+  height: 100%;
+}
+
+.description .col-1 {
+  width: 50%;
+}
+
+.description .col-2 {
+  width: calc(50% - 120px);
+  margin-left: 120px;
+}
+
+.description .col-1 p {
+  margin-top: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.description .col-2 > div:first-child {
+  background-color: #ff5d5d;
+  height: 234px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.description .col-2 > div:last-child {
+  height: 190px;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.description .col-2 p {
+  margin: 20px 0;
+}
+
+.description button {
+  height: 55px;
+  width: 155px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.description button:hover {
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+/* Section 1 */
+.section1 {
+  margin: 30px 0 100px 0;
+}
+
+.section1 > p {
+  text-align: right;
+  margin: 40px 0;
+}
+
+.section1 > div:last-child {
+  display: flex;
+}
+
+.section1 img {
+  width: 70px;
+  height: 70px;
+}
+
+.section1 > div:last-child > div {
+  border: grey solid 2px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 > div:last-child > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Section 2 */
+
+.section2 > div:nth-child(2) {
+  /* border: red solid 2px; */
+  height: 340px;
+  margin: 30px 0;
+  display: flex;
+}
+
+.section2 .texts {
+  /* background-color: lightgrey; */
+  flex: 1;
+  height: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.section2 .texts p {
+  margin: 30px 0;
+}
+
+.section2 .carrousel {
+  /* background-color: lightcoral; */
+  flex: 3;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.section2 .column {
+  width: calc(100% / 3 - (40px / 3));
+  height: 100%;
+  /* background-color: cadetblue; */
+  /* border: black 2px solid; */
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.section2 .column:not(:last-child) {
+  margin-right: 20px;
+}
+
+.section2 .column img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.section2 .circle {
+  background-color: purple;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 .circle i {
+  font-size: 30px;
+  color: pink;
+}
+
+.section2 .relative {
+  position: relative;
+}
+
+.section2 .circle:hover i {
+  color: green;
+  font-weight: 900;
+}
